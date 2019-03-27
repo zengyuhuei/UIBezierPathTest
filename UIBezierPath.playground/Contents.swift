@@ -1,9 +1,9 @@
 import UIKit
 
 //background
-let background = CGRect(x: 100 ,y: 100, width: 741, height: 390)
+let background = CGRect(x: 100 ,y: 100, width: 600, height: 390)
 let backgroundView = UIView(frame: background)
-backgroundView.backgroundColor = UIColor(red: 1, green: 1, blue:10, alpha: 1)
+backgroundView.backgroundColor = UIColor(red: 0, green: 0, blue:0, alpha: 1)
 
 let aDegree = CGFloat.pi / 180
 let alpha: CGFloat = 1
@@ -87,5 +87,62 @@ purpleLayer.path = purple.cgPath
 purpleLayer.fillColor = UIColor(red: 127/255, green: 0/255, blue: 255/255, alpha: 1).cgColor
 
 backgroundView.layer.addSublayer(purpleLayer)
+backgroundView
+
+
+let cloud = UIBezierPath(ovalIn: CGRect(x: 300, y: 250, width: 150, height: 100))
+
+cloud.close()
+let cloudLayer = CAShapeLayer()
+cloudLayer.path = cloud.cgPath
+cloudLayer.fillColor = UIColor(red: 240/255, green: 255/255, blue: 255/255, alpha: 1).cgColor
+
+backgroundView.layer.addSublayer(cloudLayer)
+backgroundView
+let cloud2 = UIBezierPath(ovalIn: CGRect(x: 360, y: 250, width: 150, height: 100))
+
+cloud2.close()
+let cloud2Layer = CAShapeLayer()
+cloud2Layer.path = cloud2.cgPath
+cloud2Layer.fillColor = UIColor(red: 240/255, green: 255/255, blue: 255/255, alpha: 1).cgColor
+
+backgroundView.layer.addSublayer(cloud2Layer)
+backgroundView
+let cloud3 = UIBezierPath(ovalIn: CGRect(x: 450, y: 250, width: 150, height: 100))
+
+cloud3.close()
+let cloud3Layer = CAShapeLayer()
+cloud3Layer.path = cloud3.cgPath
+cloud3Layer.fillColor = UIColor(red: 240/255, green: 255/255, blue: 255/255, alpha: 1).cgColor
+
+backgroundView.layer.addSublayer(cloud3Layer)
+backgroundView
+let cloud4 = UIBezierPath(ovalIn: CGRect(x: 0, y: 250, width: 150, height: 100))
+
+cloud4.close()
+let cloud4Layer = CAShapeLayer()
+cloud4Layer.path = cloud4.cgPath
+cloud4Layer.fillColor = UIColor(red: 240/255, green: 255/255, blue: 255/255, alpha: 1).cgColor
+
+backgroundView.layer.addSublayer(cloud4Layer)
+backgroundView
+
+let cloud5 = UIBezierPath(ovalIn: CGRect(x: 60, y: 250, width: 150, height: 100))
+
+cloud5.close()
+let cloud5Layer = CAShapeLayer()
+cloud5Layer.path = cloud5.cgPath
+cloud5Layer.fillColor = UIColor(red: 240/255, green: 255/255, blue: 255/255, alpha: 1).cgColor
+
+backgroundView.layer.addSublayer(cloud5Layer)
+backgroundView
+let cloud6 = UIBezierPath(ovalIn: CGRect(x: 150, y: 250, width: 150, height: 100))
+
+cloud6.close()
+let cloud6Layer = CAShapeLayer()
+cloud6Layer.path = cloud6.cgPath
+cloud6Layer.fillColor = UIColor(red: 240/255, green: 255/255, blue: 255/255, alpha: 1).cgColor
+
+backgroundView.layer.addSublayer(cloud6Layer)
 backgroundView
 
